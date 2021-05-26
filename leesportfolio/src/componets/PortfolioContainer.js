@@ -1,6 +1,9 @@
 import React, { Component } from "react";
-import NavBar from "./NavBar";
+import NavBar from "../componets/NavBar";
 import Home from "./pages/Home";
+import AboutMe from "./pages/AboutMe";
+import Work from "./pages/Work";
+import ContactMe from "./pages/ContactMe";
 
 
 class Portfolio extends Component {
@@ -16,11 +19,13 @@ class Portfolio extends Component {
         if (this.state.currentPage === "Home") {
             return <Home/>;
         } else if (this.state.currentPage === "AboutMe"){
-            return <Aboutme/>;
-        } else if (this.state.currentPage === "Porfolio") {
-            return <Portfolio/>;
+            return <AboutMe/>;
+        } else if (this.state.currentPage === "Work") {
+            return <Work/>;
         } else {
-            return <Contact />;
+            return <ContactMe/>;
         }
     };
 }
+
+export default Portfolio;
