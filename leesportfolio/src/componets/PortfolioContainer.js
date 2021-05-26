@@ -26,6 +26,18 @@ class Portfolio extends Component {
             return <ContactMe/>;
         }
     };
+
+    render() {
+        return (
+            <div>
+                <NavBar
+                currentPage={this.state.currentPage}
+                handlePageChange={this.handlePageChange}
+                />
+                {this.renderPage()}
+            </div>
+        );
+    }
 }
 
 export default Portfolio;
