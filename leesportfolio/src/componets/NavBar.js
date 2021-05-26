@@ -37,12 +37,7 @@ function NavBar(props) {
                   ContactMe
                     </a>
             </li>
-        </ul>
-
-        
-
-
-        
-    )
-
+        </ul>  
+    );
 }
+export default NavBar;
